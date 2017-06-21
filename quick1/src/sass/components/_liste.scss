@@ -1,0 +1,69 @@
+.list{
+	overflow: hidden;
+	span{
+		font-family: "fontawesome"; 
+		font-size: 1.25em;
+	}
+	.ouvert{
+		color: lime;
+	}
+	.ferme{
+		color: red;
+	}
+	.more{
+		writing-mode: vertical-rl;
+  		text-orientation: sideways;
+  		position: absolute;
+  		right: 5%;
+  		top: 45%;
+	}
+	&__elt--div{
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		line-height: 1.35em;
+		border-bottom: 1px solid black;
+		padding: 2em 0;
+	}
+	&__elt:first-child{
+		margin-top: 5em;
+	}
+	&__elt{
+		position: relative;
+	}
+	&__elt:hover,
+	&__elt:focus{
+		background-color: #CB162D; 
+	}
+	&__elt:hover a,
+	&__elt:focus a{
+		text-decoration: none;
+		color: white;
+	}
+	&__elt a{
+		text-decoration: none;
+		color: black;
+	}
+	&__elt .statu{
+		order:1;
+		width: 5%;
+		margin-right: 1em;
+	}
+	&__elt .name{
+		order:2;
+		width: 55%;
+		font-size: 1.2em;
+		font-weight: 800;
+		padding-bottom: 1em;
+	}
+	&__elt .distance{
+		order:3;
+		width: 20%;
+		text-align: right;
+	}
+	&__elt .adresse{
+		order:4;
+		width: 80%;
+	}
+}

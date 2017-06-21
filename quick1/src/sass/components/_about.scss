@@ -1,0 +1,32 @@
+.page{
+	line-height: 1.5em;
+	&__slogan{
+		width: 100%;
+		margin-top: 5em;
+	}
+	&__me{
+		width: 90%;
+		margin: 0 auto;	
+		margin-bottom: 4em;
+	}
+	&__projet{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 5em;
+	}
+	&__para{
+		margin-bottom: 1em;
+	}
+	&__title2{
+		font-size: 1.8em;
+		margin-bottom: 1.5em;
+	}
+	&__infos{
+		padding: 1em 0;
+		width: 90%;
+		margin: 0 auto;
+		font-size: 0.8em;
+		border-top: 1px solid #CB162D;
+		text-align: center;
+	}
+}

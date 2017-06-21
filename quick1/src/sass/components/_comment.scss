@@ -1,0 +1,131 @@
+.contentComment{
+	padding-top: 5em;
+	.list{
+		&__elt{
+			&--div{
+				width: 100%;
+				padding: 1em 5%;
+				display: flex;
+				flex-wrap: wrap;
+				.name{
+					order: 1;
+					font-weight: 800;
+					width: 60%;
+					margin-bottom: 1em;
+				}
+				.adresse{
+					order: 3;
+					width: 100%;
+				}
+				.distance{
+					order: 2;
+					text-align: right;
+					width: 40%;
+				}
+				.statu{
+					display: none;
+				}
+				.more{
+					display: none;
+					// font-family: "fontawesome";
+					// writing-mode: vertical-rl;
+			  		// text-orientation: sideways;
+			  		// position: absolute;
+			  		// right: 5%;
+			  		// top: 42%;
+				}
+			}
+		}
+	}
+	.formulaire{
+		margin-top: 2.5em;
+		&__champs{
+			padding: 0 5% 2.5em;
+		}
+		&__options{
+			padding: 0 5% 2.5em;
+		}
+		&__txt{
+			position: fixed;
+			bottom: 0;
+			background-color: white;
+			padding: 0.5em 5%;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+		&__like{
+			position: relative;
+			display: inline-block;
+			border: none;
+			font-size: 14px;
+			left: 50%;
+			transform: translateX(-50%);
+			input{
+				border: 0;
+				overflow: hidden;
+				position: absolute;
+				clip: rect(1px 1px 1px 1px);
+				clip: rect(1px, 1px, 1px, 1px);
+				opacity: 1;
+			}
+			label{
+				position: relative;
+				float: right;
+				color: #C8C8C8;
+
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	    		filter: grayscale(100%);
+			}
+			img{
+				width: 5em;
+				margin: -0.8em;
+	    		cursor: pointer;
+			}
+			input:checked ~ label {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    			filter: grayscale(0%);
+			}
+			label:hover ~ label {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    			filter: grayscale(0%);
+			}
+			label:hover {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    			filter: grayscale(0%);
+			}
+		}
+		&__label{
+			margin-bottom: 0.5em;
+			display: block;
+		}
+		&__labelTextarea{
+			display: none;
+		}
+		&__input{
+			border-radius: 8px;
+			padding: 0.25em 1em;
+			border: 1px solid black;
+		}
+		&__textarea{
+			display: inline-block;
+			font-family: '-apple-system','HelveticaNeue';
+			color: grey;
+			border-radius: 8px;
+			border: 1px solid black;
+			padding: 0.5em 1em;
+			font-size: 0.8em;
+			width: 80%;
+			min-height: 2.5em;
+			resize: vertical;
+		}
+		&__button{
+			cursor: pointer;
+			position: relative;
+			top: -7px;
+			display: inline-block;
+			width: 20%;
+			border: 1px solid transparent;
+			background-color: transparent;
+		}
+	}
+}
